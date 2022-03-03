@@ -1,0 +1,16 @@
+h1{
+    color: rgb(76, 170, 22);
+    font-size: 50px;
+}
+p{
+
+    text-align: center;
+}
+body{
+    background-color: rgb(105, 187, 160);
+}
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../js.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css1.css">
+    <title>JS DOM </title>
+   
+</head>
+<body>
+    <main>
+        <h1>DOM</h1>
+        <p>Primeiros passos</p>
+        <p>Com Live Server em vez de Watch in Chrome</p>
+        <script>
+            window.document.write(window.document.URL + '<br>')
+            var z = window.document.getElementsByTagName('p')[0]
+            //window.document.getElementsByTagName('p') : Pega os elementos pela tag, todos então é um array
+            window.document.write(z.innerText)
+            // Mostra o texto do elemento retornado
+            z.style.color = 'red' // Muda cor do elemento
+            window.document.write('<br>' + z.innerHTML)//Pega o html inteiro, incluse tags filhas
+            
+            
+        </script>
+    </main>
+    
+</body>
+</html>

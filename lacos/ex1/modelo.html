@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Exercício de verificar hora do dia e mostrar mensagem e imagem -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../js.ico" type="image/x-icon">
+    <link rel="stylesheet" href="modelo.css">
+    <title>Exercício Laços 1</title>
+    
+</head>
+<body>
+    <script src="script.js"></script>
+   <header>
+       <h1>Vamos contar</h1>
+   </header>
+   <section>
+        <div>
+           <p>Início: 
+              <input type="number" name="ini" id="ini" min="0" >
+           </p>
+           <p>Fim:
+            <input type="number" name="fim" id="fim" min="0" >
+           </p>
+           <p>Passo:
+            <input type="number" name="pas" id="pas" min="0" >
+           </p>
+
+           <div style="padding: 0px;" >
+               <input style="float: left;" type="button" value="Contar" onclick="contar()">
+               <input style="float: right;" type="button" value="Limpar" onclick="limpar()">
+           </div>
+
+        </div>
+
+        <br>
+        <div id="res">
+            Preparando contagem...
+        </div>
+            
+   </section>
+
+   <footer>
+       <p>&copy; Curso em Vídeo</p>
+   </footer>
+
+   
+    
+</body>
+</html>

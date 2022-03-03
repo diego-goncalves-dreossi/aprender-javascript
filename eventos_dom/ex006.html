@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../js.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css1.css">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: rgb(178, 212, 178);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()"  onmouseenter="entrar()" onmouseout="sair()">
+        Interaja....
+    </div>
+
+    <script>
+        var area = window.document.getElementById('area');
+        //Variável que presta atenção nos eventos da página
+        //Listener
+        //area.addEventListener('click',clicar)
+        //area.addEventListener('mouseenter',entrar)
+        //area.addEventListener('mouseout',sair)
+        //
+        function clicar(){
+            area.innerText = 'Clicou'
+            area.style.background = 'blue'
+        }
+        function entrar(){
+            area.innerText = 'Entrou'
+            area.style.background = 'rgb(178, 212, 178)'
+        }
+        function sair(){
+            area.innerText = 'Saiu'
+            area.style.background = 'red'
+        }
+
+    </script>
+    
+    
+</body>
+</html>
